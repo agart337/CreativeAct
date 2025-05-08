@@ -1,0 +1,60 @@
+html,
+body {
+    overscroll-behavior: none;
+    margin: 0;
+    height: 100%;
+    padding-bottom: 1vw;
+}
+
+/* layout */
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2vw;
+    height: 100vh;
+    padding: 0vw 1vw 0vw 1vw;
+}
+
+.column1,
+.column2 {
+    overflow-y: auto;
+
+}
+
+.column1::-webkit-scrollbar,
+.column2::-webkit-scrollbar {
+    display: none;
+}
+
+.column1 {
+    grid-column: 1;
+}
+
+.column2 {
+    grid-column: 2;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    margin: 0;
+}
+
+a {
+    font-family: Helvetica, sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+}
+
+#Creative {
+    color: #F0636C;
+}
+
+#Awareness {
+    color: #FF901A;
+}
